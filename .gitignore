@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+*.log
+*.json
+credentials*
+*credentials*
+*secret*
+*token*
+data/
+backups/

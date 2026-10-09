@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Présentation de Sauvegardes VPS, un outil personnel de sauvegarde et de restauration vers Google Drive avec rclone et Restic.">
+  <title>Sauvegardes VPS</title>
+  <style>
+    :root { color-scheme: light; --bg:#f7f8fa; --card:#fff; --text:#172033; --muted:#566176; --line:#dce1e8; --accent:#2855b4; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--text); background:var(--bg); }
+    main, footer { width:min(720px, calc(100% - 2rem)); margin:auto; }
+    main { padding:clamp(3rem,10vw,7rem) 0 2rem; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:clamp(1.5rem,5vw,3rem); box-shadow:0 10px 30px rgba(23,32,51,.06); }
+    h1 { margin:0 0 .5rem; font-size:clamp(2rem,7vw,3.4rem); line-height:1.1; letter-spacing:-.035em; }
+    h2 { margin:2rem 0 .4rem; font-size:1.15rem; }
+    p { margin:.5rem 0; }
+    .intro { color:var(--muted); font-size:1.1rem; }
+    a { color:var(--accent); text-underline-offset:.18em; }
+    footer { padding:1rem 0 3rem; color:var(--muted); font-size:.95rem; display:flex; gap:1rem; flex-wrap:wrap; }
+    a:focus-visible { outline:3px solid #f3b61f; outline-offset:3px; border-radius:2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Sauvegardes VPS</h1>
+      <p class="intro">Outil personnel de sauvegarde et de restauration de fichiers provenant de mes propres serveurs VPS.</p>
+
+      <h2>Fonctionnement</h2>
+      <p>L’outil utilise <a href="https://rclone.org/drive/">rclone</a> pour accéder à Google Drive et <a href="https://restic.net/">Restic</a> pour créer des archives chiffrées. Son usage opérationnel porte sur les sauvegardes d’un dossier désigné et leur restauration lorsque nécessaire.</p>
+
+      <h2>Accès à Google Drive</h2>
+      <p>L’autorisation Google demandée permet la lecture, l’écriture et la gestion nécessaires aux sauvegardes. L’accès OAuth à Drive est large sur le plan technique et n’est pas présenté comme limité par OAuth à un seul dossier.</p>
+
+      <h2>Projet personnel</h2>
+      <p>Ce site est une vitrine d’information. Il ne propose ni connexion, ni API, ni suivi publicitaire, et n’ajoute aucun cookie. GitHub, qui héberge ce site, peut toutefois traiter des journaux techniques selon ses propres politiques.</p>
+    </article>
+  </main>
+  <footer>
+    <a href="privacy.html">Confidentialité</a>
+    <a href="https://github.com/grums67">Profil GitHub de contact</a>
+  </footer>
+</body>
+</html>
